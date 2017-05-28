@@ -1,0 +1,9 @@
+# example text file output from the ImageJ CellCounter plugin
+# filename format: <4-digit identifier>_<2-digit stage>_<genotype>_b<belt number>r<row number>.txt
+
+
+Type  Slice   X   Y
+1     1       5   5   
+1     1       8   5   
+2     1       0   5   
+2     1       10  5   
