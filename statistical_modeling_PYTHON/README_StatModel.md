@@ -39,7 +39,7 @@ column | label | description
 ------ | ----- | -----------
 01 | embryoID | unique # for each embryo, so that the script finds individual embryos, and so I can trace problems; embryo pattern is 0xxx
 02 | row | aka cell column; [1:6]        
-03 | belt | 'band' number, corresponding to the abdominal segment number; I focused on denticle belts 3-7, as these are most similarly strucured.    
+03 | belt | 'band' number, corresponding to the abdominal segment number; I focused on denticle belts 3-7, as these are most similarly structured.    
 04 | cell | from left to right (embryo tail-up) (or top to bottom, embryo with head pointing left) , the # of the cell within that specific belt/row (e.g. if there are 6 cells in that row/belt, there will be 6 rows of data, with this column [1:6] 
 05 | dentincell | # of denticles in that cell
 06 | Dvlen | length of the cell     
@@ -56,12 +56,9 @@ column | label | description
 ### Options 
 
 * choose number of repeats/iterations 
-* choose to use the 'absolute' cell DV length or the summed total of denticle-edge and denticle-denticle distances (as in the equation below)
-    * To swich between these optisons, comment/uncomment the sections of code under the headers 
-        > # using the 'absolute' DV length (dist between edge markers)
-        or 
-        > using the summed DVlength (sum of dent-edge, dent-dent ... dent-dent, dent-edge); sum to get the additive, rather than absolute, DV length
-        in StatisticalModel_DenticleOrganization*.py
+* choose to use the 'absolute' cell DV length or the summed total of denticle-edge and denticle-denticle distances (as in the equation below). To switch between these options, comment/uncomment the sections of code under the headers. 
+	* using the 'absolute' DV length (dist between edge markers)
+	* using the summed DVlength (sum of dent-edge, dent-dent ... dent-dent, dent-edge); sum to get the additive, rather than absolute, DV length in StatisticalModel_DenticleOrganization*.py
 
 
 
