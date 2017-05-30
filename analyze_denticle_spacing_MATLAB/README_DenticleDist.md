@@ -76,7 +76,7 @@ column | label | description
 18 | Intra9 |
 
 __\*\_IntrabyCell.csv *(version w/ headers)* and \*\_intrabyCellStack.csv *(version w/o headers)*__
-contains the data for cells with n≥2 denticles, with n lines for each cell (where n is the # of denticles that cell posesses)
+contains the data for cells with n≥2 denticles, with n lines for each cell (where n is the # of denticles that cell possesses)
 
 column | label | description
 ------ | ----- | -----------
@@ -90,7 +90,7 @@ column | label | description
 
 
 __\*\_CellOrder.csv *(version w/ headers)* and \*\_cellOrderStack.csv *(version w/o headers)*__
-*contains the data for cells with n≥2 denticles, with n lines for each cell (where n is the # of denticles that cell posesses)
+*contains the data for cells with n≥2 denticles, with n lines for each cell (where n is the # of denticles that cell possesses)
 
 column | label | description
 ------ | ----- | -----------
@@ -122,7 +122,7 @@ column | label | description
 * __AnalyzeDenticleOrganization.m__  this is the main script that calls all the others; creates the primary .csv files that are used by all other functions
 * __DenticleOrganization\_ImportData.m__ parses \*.csv files for a single genotype, as specified by the user in _AnalyzeDenticleOrganization.m_, creates statistics files, calls _DataDivider.m_ & _DenticleCalculations.m_
 * __DataDivider.m__ imports \*.csv from _AnalyzeDenticleOrganization.m_ to output derivative calculations
-* __DenticleCalculations.m__ called by _DenticleOrganization\_ImportData.m_ to output derivitive calculations
+* __DenticleCalculations.m__ called by _DenticleOrganization\_ImportData.m_ to output derivative calculations
 
 *generic functions*
 * AddHeaders.m
@@ -162,7 +162,7 @@ Make sure you are looking at the 'Command Window' tab in Matlab so you can respo
     
 2. user prompt: What is the genotype in the filenames?
     * This is the string that the program will look for in all your data files. 
-    * IF the string you put in above is in all your desired input files, this is unnecssary. just hit [Enter]
+    * IF the string you put in above is in all your desired input files, this is unnecessary. just hit [Enter]
     * IF you put in additional info above, or the string is NOT found in all your data files, enter the search string here  
     * for example: 
         - if all your text files are named with \*\*\*\*\_\*\*\_yw\_b\*r\*, and you enter at (1) 'yw', then at (2) you can hit [enter]
